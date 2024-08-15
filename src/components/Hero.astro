@@ -1,0 +1,67 @@
+---
+
+---
+
+<div class="flex flex-col items-center gap-5 grow">
+  <div class="w-full flex flex-col items-center">
+    <h1 class="text-white font-black text-6xl">La Ballena Azul</h1>
+    <h2 class="text-grey font-bold text-2xl text-center">
+      Desde el Mar a tu Mesa. La Mejor Experiencia Gourmet.
+    </h2>
+  </div>
+  <div class="flex flex-col gap-1 w-56">
+    <button class="border p-2 rounded-xl bg-orange text-white font-bold w-full"
+      >Ordena Ahora</button
+    >
+    <button class="p-2 bg-grey text-greyBlack font-bold w-full"
+      >Explora Nuestro Menu</button
+    >
+    <button
+      class="border p-2 rounded-xl bg-greyBlack text-white font-bold w-full"
+      >Descrubre Recetas</button
+    >
+    <button class="border p-2 text-white font-bold w-full">Reservar</button>
+  </div>
+  <div class="wave grow"></div>
+</div>
+
+<style>
+  .wave {
+    width: 100vw;
+    min-height: 250px;
+    flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0.315);
+    animation: wave 3s ease-in-out infinite;
+  }
+
+  @keyframes wave {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 47%,
+        10% 48%,
+        33% 54%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  }
+</style>

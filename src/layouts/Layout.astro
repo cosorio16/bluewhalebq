@@ -18,14 +18,19 @@ const { title } = Astro.props;
   <meta name="generator" content={Astro.generator} />
   <title>{title}</title>
 
-  <body>
+  <body class="max-w-screen min-h-screen bg-blue font-poppins">
     <slot />
   </body>
 </html>
 
-
 <style is:global>
-html {
-  scrollbar-width: none;
-}
+  html {
+    scrollbar-width: none;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+
+    font-style: normal;
+  }
 </style>
