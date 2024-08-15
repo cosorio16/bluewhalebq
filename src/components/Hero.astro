@@ -2,7 +2,7 @@
 
 ---
 
-<div class="flex flex-col items-center gap-5 grow">
+<div class="flex flex-col items-center gap-10">
   <div class="w-full flex flex-col items-center">
     <h1 class="text-white font-black text-6xl">La Ballena Azul</h1>
     <h2 class="text-grey font-bold text-2xl text-center">
@@ -10,28 +10,30 @@
     </h2>
   </div>
   <div class="flex flex-col gap-1 w-56">
-    <button class="border p-2 rounded-xl bg-orange text-white font-bold w-full"
+    <button class="border p-2 bg-orange text-white font-bold w-full"
       >Ordena Ahora</button
     >
     <button class="p-2 bg-grey text-greyBlack font-bold w-full"
       >Explora Nuestro Menu</button
     >
-    <button
-      class="border p-2 rounded-xl bg-greyBlack text-white font-bold w-full"
+    <button class="border p-2 bg-greyBlack text-white font-bold w-full"
       >Descrubre Recetas</button
     >
     <button class="border p-2 text-white font-bold w-full">Reservar</button>
   </div>
-  <div class="wave grow"></div>
+  <div class="wave">
+    <img src="../../src/assets/whale.png" alt="" class="" />
+  </div>
 </div>
 
 <style>
   .wave {
     width: 100vw;
-    min-height: 250px;
-    flex-grow: 1;
+    min-height: 850px;
     background-color: rgba(255, 255, 255, 0.315);
     animation: wave 3s ease-in-out infinite;
+    position: relative;
+    transform: translateY(-500px);
   }
 
   @keyframes wave {
@@ -63,5 +65,14 @@
         0% 100%
       );
     }
+  }
+
+  img {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    margin:  0 auto;
+    left: calc(50% - 250px);
+    transform: scale(.9)
   }
 </style>
