@@ -1,0 +1,138 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="La Ballena Azul Barranquilla">
+  <header class="w-full h-20 bg-greyBlack"></header>
+  <main class="max-w-screen min-h-screen bg-blue font-poppins px-10">
+    <div class="flex flex-col items-center gap-5">
+      <div class="w-full flex flex-col items-center">
+        <h1 class="text-white font-black text-6xl">La Ballena Azul</h1>
+        <h2 class="text-grey font-bold text-2xl text-center">
+          Desde el Mar a tu Mesa. La Mejor Experiencia Gourmet
+        </h2>
+      </div>
+      <div class="flex flex-col gap-1 w-56">
+        <button
+          class="border p-2 rounded-xl bg-orange text-white font-bold w-full"
+          >Ordena Ahora</button
+        >
+        <button class="p-2 bg-grey text-greyBlack font-bold w-full"
+          >Explora Nuestro Menu</button
+        >
+        <button
+          class="border p-2 rounded-xl bg-greyBlack text-white font-bold w-full"
+          >Descrubre Recetas</button
+        >
+        <button class="border p-2 text-white font-bold w-full">Reservar</button>
+      </div>
+    </div>
+
+    <div class="">
+      <h1 class="text-white font-semibold text-xl">Productos Destacados</h1>
+      <div class="flex gap-5">
+        <div class="w-52 h-56 border rounded-t-xl">
+          <img
+            src="../../src/assets/kitdesushi.png"
+            alt=""
+            class="object-cover w-full aspect-square grow rounded-t-xl h-full"
+          />
+        </div>
+
+        <div class="w-52 h-72 border rounded-t-xl flex flex-col items-center">
+          <img
+            src="../../src/assets/kitdesushi.png"
+            alt=""
+            class="object-cover w-full aspect-square grow rounded-t-xl"
+          />
+          <p
+            class="h-fit py-5 font-bold text-white bg-greyBlack w-full text-center"
+          >
+            Kit de sushi
+          </p>
+        </div>
+
+        <div class="w-52 h-56 border rounded-t-xl">
+          <img
+            src="../../src/assets/kitdesushi.png"
+            alt=""
+            class="object-cover w-full aspect-square grow rounded-t-xl h-full"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1 class="text-white font-semibold text-xl">Platos del Dia</h1>
+      <p>informacion detallada, valor nutricional, recetas sugeridas</p>
+      <div class="flex gap-5">
+        <div class="w-52 h-56 border rounded-t-xl">
+          <img
+            src="../../src/assets/kitdesushi.png"
+            alt=""
+            class="object-cover w-full aspect-square grow rounded-t-xl h-full"
+          />
+        </div>
+
+        <div class="w-52 h-72 border rounded-t-xl flex flex-col items-center">
+          <img
+            src="../../src/assets/kitdesushi.png"
+            alt=""
+            class="object-cover w-full aspect-square grow rounded-t-xl"
+          />
+          <p
+            class="h-fit py-5 font-bold text-white bg-greyBlack w-full text-center"
+          >
+            Kit de sushi
+          </p>
+        </div>
+
+        <div class="w-52 h-56 border rounded-t-xl">
+          <img
+            src="../../src/assets/kitdesushi.png"
+            alt=""
+            class="object-cover w-full aspect-square grow rounded-t-xl h-full"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-between pb-5 mb-5 border-b-2 border-white">
+        <div>
+          <h1 class="text-white font-bold text-xl">Mapa</h1>
+          <p class="text-grey font-medium text-lg">Calle 93 #49C - 42</p>
+        </div>
+        <button
+          class="border p-2 rounded-md font-semibold tracking-wide bg-orange text-white"
+          >Abrir Google Maps</button
+        >
+      </div>
+      <img class="w-full h-96" src="../../src/assets/location.png" />
+    </div>
+
+    <div
+      class="fixed left-0 bottom-0 bg-greyBlack p-5 flex flex-col gap-3 w-screen"
+    >
+      <h1 class="text-white text-lg font-medium">
+        Recibe mensajes para que no te pierdas ningunos de nuestras ofertas para
+        ti
+      </h1>
+      <div>
+        <button
+          class="border p-2 rounded-lg w-52 bg-blue text-white font-bold tracking-wide"
+          >Acepto</button
+        >
+        <button
+          class="border p-2 rounded-lg w-52 text-orange font-bold tracking-wide"
+          >No, gracias.</button
+        >
+      </div>
+    </div>
+
+    <h1>Acerca Nosotros</h1>
+
+    <p>contacto</p>
+
+    <p>Orden en linea, reservas, redes, lealtad</p>
+  </main>
+</Layout>
