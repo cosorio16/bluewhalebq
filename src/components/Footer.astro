@@ -1,9 +1,30 @@
 ---
-
+import Link from "./Link.astro";
 ---
 
-<h1>Acerca Nosotros</h1>
-
-<p>contacto</p>
-
-<p>Orden en linea, reservas, redes, lealtad</p>
+<footer class="min-h-[50vh] border bg-greyBlack px-5 py-2 flex flex-col gap-8">
+  <div class="flex flex-col">
+    <h1 class="text-grey text-2xl font-semibold">Nuestras redes</h1>
+    <Link text="Ordena Ahora" />
+    <Link text="Instagram" />
+    <Link text="Facebook" />
+    <Link text="Sitio Web" />
+  </div>
+  <div class="flex flex-col items-center text-center gap-2">
+    <p class="font-medium text-grey text-md">
+      También puedes descargar nuestro menú en PDF
+    </p>
+    <a href="" class="px-4 py-2 border-2 text-orange bg-white w-fit"
+      >Descargar Menú</a
+    >
+  </div>
+  <div>
+    <h1>Contactanos</h1>
+    <input type="text" />
+    <button>enviar</button>
+  </div>
+  <div>
+    <p>Este sitio web usa cookies para mejorar tu experiencia.</p>
+    <p>La Ballena Azul Barraquilla 1995 - 2024 &copy;</p>
+  </div>
+</footer>
