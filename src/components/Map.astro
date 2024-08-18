@@ -2,15 +2,37 @@
 
 ---
 
-<div>
+<div class="flex flex-col gap-5">
   <div class="flex flex-col gap-5">
-    <div>
-      <h1 class="text-white font-semibold text-xl">Mapa</h1>
-      <p class="text-grey font-medium text-lg">Calle 93 #49C - 42</p>
+    <div class="flex flex-col border-b-2 pb-4 border-white">
+      <div class="flex w-full gap-4">
+        <svg class="text-white" width="50" height="50" viewBox="0 0 24 24"
+          ><g
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            ><circle cx="12" cy="10" r="3"></circle><path
+              d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8"
+            ></path></g
+          ></svg
+        >
+        <h1 class="text-white font-semibold text-xl">
+          Ubícanos y Vive la Experiencia Gourmet Marina
+        </h1>
+      </div>
     </div>
   </div>
   <div>
-    <img class="w-full h-96" src="../../src/assets/location.png" />
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.447976949215!2d-74.82536797354123!3d11.004976907997431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d2ed67a96bb%3A0x92b8397fe0fa676c!2sLa%20Ballena%20Az%C3%BAl!5e0!3m2!1ses-419!2sco!4v1724002110851!5m2!1ses-419!2sco"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      class="w-full"></iframe>
     <button
       class="p-2 rounded-b-md font-semibold tracking-wide bg-orange text-white w-full"
       >Abrir Google Maps</button

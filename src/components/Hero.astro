@@ -3,22 +3,61 @@
 ---
 
 <div class="flex flex-col items-center gap-10">
-  <div class="w-full flex flex-col items-center">
-    <h1 class="text-white font-black text-6xl">La Ballena Azul</h1>
-    <h2 class="text-grey font-bold text-2xl text-center">
+  <div class="w-full flex flex-col items-center border-b-2 border-white pb-5">
+    <h1 class="text-white font-black text-5xl mb-1">La Ballena Azul</h1>
+    <h2 class="text-grey font-bold text-xl text-center mb-4">
       Desde el Mar a tu Mesa. La Mejor Experiencia Gourmet.
     </h2>
+    <p class="text-orange text-lg font-semibold flex gap-4">
+      <svg width="29" height="29" viewBox="0 0 24 24"
+        ><path
+          fill="currentColor"
+          d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+        ></path><rect
+          width="2"
+          height="7"
+          x="11"
+          y="6"
+          fill="currentColor"
+          rx="1"
+          ><animateTransform
+            attributeName="transform"
+            dur="9s"
+            repeatCount="indefinite"
+            type="rotate"
+            values="0 12 12;360 12 12"></animateTransform></rect
+        ><rect width="2" height="9" x="11" y="11" fill="currentColor" rx="1"
+          ><animateTransform
+            attributeName="transform"
+            dur="0.75s"
+            repeatCount="indefinite"
+            type="rotate"
+            values="0 12 12;360 12 12"></animateTransform></rect
+        ></svg
+      >
+      Todos los dias desde las 7:00am
+    </p>
+    <p class="text-grey font-medium text-lg flex gap-1">
+      <svg class="text-white" width="25" height="25" viewBox="0 0 24 24"
+        ><g
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          ><circle cx="12" cy="10" r="3"></circle><path
+            d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8"
+          ></path></g
+        ></svg
+      >
+      Calle 93 #49C - 42
+    </p>
   </div>
   <div class="flex flex-col gap-1 w-56">
-    <button class="border p-2 bg-orange text-white font-bold w-full"
-      >Ordena Ahora</button
-    >
-    <button class="p-2 bg-grey text-greyBlack font-bold w-full"
-      >Explora Nuestro Menu</button
-    >
-    <button class="border p-2 bg-greyBlack text-white font-bold w-full"
-      >Descrubre Recetas</button
-    >
+    <button class="border p-2 bg-orange text-white font-bold w-full">
+      Ver Menu
+    </button>
+
     <button class="border p-2 text-white font-bold w-full">Reservar</button>
   </div>
   <div class="wave">
@@ -29,11 +68,13 @@
 <style>
   .wave {
     width: 100vw;
-    min-height: 850px;
-    background-color: rgba(255, 255, 255, 0.315);
+    min-height: 750px;
+    background-color: rgba(255, 255, 255, 0.373);
     animation: wave 3s ease-in-out infinite;
-    position: relative;
-    transform: translateY(-500px);
+    position: absolute;
+    top: -350px;
+    opacity: 0.3;
+    z-index: -1;
   }
 
   @keyframes wave {
@@ -71,8 +112,8 @@
     z-index: -1;
     position: absolute;
     bottom: 0;
-    margin:  0 auto;
+    margin: 0 auto;
     left: calc(50% - 250px);
-    transform: scale(.9)
+    transform: scale(0.9);
   }
 </style>
