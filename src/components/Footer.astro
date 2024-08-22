@@ -2,74 +2,76 @@
 import Link from "./Link.astro";
 ---
 
-<footer
-  class="min-h-[50vh] border bg-greyBlack px-5 pt-8 pb-2 flex flex-col gap-8"
->
-  <div
-    class="flex flex-col gap-4 border-b-2 border-grey border-opacity-50 pb-4"
-  >
-    <h1 class="text-grey text-2xl font-semibold">Contactanos via</h1>
-    <div>
-      <p class="text-grey text-lg font-medium">3173000859 - Whatsapp</p>
-      <p class="text-grey text-lg font-medium">
-        ventasballena@gmail.com - Email
-      </p>
-    </div>
-    <div class="flex items-center justify-center gap-4">
-      <button
-        class="text-orange shadow-md border-greyBlack border-opacity-40 font-semibold tracking-wide px-4 py-2 bg-grey"
-        >Enviar Correo</button
-      >
-      <button
-        class="text-orange shadow-md border-greyBlack border-opacity-40 font-semibold tracking-wide px-4 py-2 bg-grey"
-        >Enviar Mensaje</button
-      >
-    </div>
-  </div>
-  <div class="flex flex-col grow ">
-    <h1 class="text-grey text-2xl font-semibold">Nuestras redes</h1>
-    <Link text="Ordena Ahora" />
-    <Link text="Instagram" />
-    <Link text="Facebook" />
-    <Link text="Sitio Web" />
-  </div>
-  <div class="border-b-2 border-grey border-opacity-50 pb-4 flex flex-col gap-4">
-    <h1 class="text-grey text-2xl font-semibold texce">
-      Conoce nuestro horario
-    </h1>
-    <div class="flex flex-wrap items-center">
-      <p class="text-grey text-lg font-medium">
-        Lunes a Sabado 9:00am a 7:00pm
-      </p>
-      <p class="text-grey text-lg font-medium">Domingos 9:00am a 7:00pm</p>
-    </div>
-  </div>
-  <div>
-    <p class="font-semibold text-white text-lg text-center">
-      Recuerda que estamos ubicados en la <br />
-      <span class="flex gap-2 items-center justify-center">
-        <svg class="text-white" width="25" height="25" viewBox="0 0 24 24"
-          ><g
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            ><circle cx="12" cy="10" r="3"></circle><path
-              d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8"
-            ></path></g
-          ></svg
+<footer class="min-h-[50vh] border bg-greyBlack">
+  <div class="px-5 pt-8 pb-2 flex flex-col gap-8 max-w-2xl m-auto">
+    <div
+      class="flex flex-col gap-4 border-b-2 border-grey border-opacity-50 pb-4"
+    >
+      <h1 class="text-grey text-2xl font-semibold">Contactanos via</h1>
+      <div>
+        <p class="text-grey text-lg font-medium">3173000859 - Whatsapp</p>
+        <p class="text-grey text-lg font-medium">
+          ventasballena@gmail.com - Email
+        </p>
+      </div>
+      <div class="flex items-center justify-center gap-4">
+        <button
+          class="text-orange shadow-md border-greyBlack border-opacity-40 font-semibold tracking-wide px-4 py-2 bg-grey"
+          >Enviar Correo</button
         >
-        Calle 93 #49C - 42
-      </span>
-    </p>
-  </div>
-  <div>
-    <p class="h-fit text-grey text-center text-xs">
-      Este sitio web usa cookies para mejorar tu experiencia.
-    </p>
-    <p class="h-fit text-white text-center text-sm">
-      La Ballena Azul Barraquilla 1995 - 2024 &copy;
-    </p>
+        <button
+          class="text-orange shadow-md border-greyBlack border-opacity-40 font-semibold tracking-wide px-4 py-2 bg-grey"
+          >Enviar Mensaje</button
+        >
+      </div>
+    </div>
+    <div class="flex flex-col grow">
+      <h1 class="text-grey text-2xl font-semibold">Nuestras redes</h1>
+      <Link text="Ordena Ahora" />
+      <Link text="Instagram" />
+      <Link text="Facebook" />
+      <Link text="Sitio Web" />
+    </div>
+    <div
+      class="border-b-2 border-grey border-opacity-50 pb-4 flex flex-col gap-4"
+    >
+      <h1 class="text-grey text-2xl font-semibold texce">
+        Conoce nuestro horario
+      </h1>
+      <div class="flex flex-wrap items-center justify-between">
+        <p class="text-grey text-lg font-medium">
+          Lunes a Sabado 9:00am a 7:00pm
+        </p>
+        <p class="text-grey text-lg font-medium">Domingos 9:00am a 7:00pm</p>
+      </div>
+    </div>
+    <div>
+      <p class="font-semibold text-white text-lg text-center">
+        Recuerda que estamos ubicados en la <br />
+        <span class="flex gap-2 items-center justify-center">
+          <svg class="text-white" width="25" height="25" viewBox="0 0 24 24"
+            ><g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              ><circle cx="12" cy="10" r="3"></circle><path
+                d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8"
+              ></path></g
+            ></svg
+          >
+          Calle 93 #49C - 42
+        </span>
+      </p>
+    </div>
+    <div>
+      <p class="h-fit text-grey text-center text-xs">
+        Este sitio web usa cookies para mejorar tu experiencia.
+      </p>
+      <p class="h-fit text-white text-center text-sm">
+        La Ballena Azul Barraquilla 1995 - 2024 &copy;
+      </p>
+    </div>
   </div>
 </footer>
